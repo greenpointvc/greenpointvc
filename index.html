@@ -4,62 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenpoint Capital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
             margin: 0;
             padding: 0;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: 'Poppins', sans-serif;
             color: #ffffff;
         }
         body {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             background: #283048;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             background-attachment: fixed;
             background-size: cover;
         }
-        .container {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
         .logo {
-            width: 25vw;  /* 25% of the viewport width */
-            height: 25vh; /* 25% of the viewport height */
+            width: 20vh;  /* Changed to 10vh for both width and height */
+            height: 20vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 40px;
+            margin: 20px auto;
         }
         .logo img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
         }
+        .text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
         .text {
-            font-size: 14px;
+            font-size: 18px;  /* Reduced to 16px */
             line-height: 1.5;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 800px;
+            font-weight: 300;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="greenpoint.svg" alt="Greenpoint Logo">
-        </div>
+    <div class="logo">
+        <img src="greenpoint.svg" alt="Greenpoint Logo">
+    </div>
+    <div class="text-container">
         <p class="text">Investing in the very best early stage technology companies</p>
     </div>
 </body>
