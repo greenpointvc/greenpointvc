@@ -8,38 +8,58 @@
         body, html {
             height: 100%;
             margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #ffffff;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-            font-family: Arial, sans-serif;
+            background: #283048;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-attachment: fixed;
+            background-size: cover;
         }
         .container {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .logo {
-            width: 150px;
-            height: 150px;
-            background-color: #fff;
-            border-radius: 50%;
+            width: 25vw;  /* 25% of the viewport width */
+            height: 25vh; /* 25% of the viewport height */
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 auto 20px;
-            font-size: 24px;
-            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         .text {
-            color: #333;
-            font-size: 18px;
-            max-width: 80%;
-            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="greenpoint.svg" alt="Greenpoint Logo">
+        </div>
         <p class="text">Investing in the very best early stage technology companies</p>
     </div>
 </body>
